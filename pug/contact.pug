@@ -1,0 +1,141 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width initial-scale=1.0')
+    //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
+    meta(name='description', content='Vision International C.P.A. Firm')
+    meta(name='keywords', content='Vision International C.P.A. Firm')
+    meta(name='author', content='Bohan Huang')
+    link(rel='shortcut icon', href='../img/logo.ico')
+    title Vision International C.P.A. Firm
+    link(rel='stylesheet', href='../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
+    link(rel='stylesheet', href='../css/contact.css?v=180521')
+    | <!--[if lt IE 9]>
+    |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    | <![endif]-->
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-119593980-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-119593980-1');
+
+  body
+    // gotop
+    #gotop
+      i.glyphicon.glyphicon-menu-up
+    // nav
+    .nav
+      nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+              span.sr-only menu change
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='../index.html')
+              .logo
+                h1 Vision International C.P.A. Firm
+          // 手機隱藏選單區
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            // 右選單
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='../index.html') Home
+              li
+                a(href='service.html') Service Items
+              li
+                a(href='about.html') About Vision
+              li
+                a(href='question.html') Questions
+              li
+                a.contacta(href='contact.html') Contact Us
+                  i.glyphicon.glyphicon-envelope
+              li#lang
+                a(href='../../html/contact.html') 中文
+          // 手機隱藏選單區結束
+    // breadcrumb
+    .bread
+      .container
+        ul.breadcrumb
+          li
+            img(src='../img/icon_home.png', alt='Home')
+            a(href='../index.html') Home
+          li.active
+            a(href='contact.html') Contact Us
+    // header
+    header.text-center
+      img.img(src='../img/contact_bg.jpg', alt='Contact Us')
+      .headertext.text-left
+    // main
+    main.text-center
+      .container
+        h2 Message
+        p Please leave your message and Vision will get back to you soon!
+        .row
+          .col-sm-12.map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14459.217014631568!2d121.5639342!3d25.0407162!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3542e048ac17e8e!2z6YGg6KaL5ZyL6Zqb5pyD6KiI5bir5LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1523952294451', width='500', height='380', frameborder='0', style='border:0', allowfullscreen='')
+          .col-sm-12
+            .form.text-right
+              span Name：
+              input#name(type='text', name='name', placeholder='Please enter your name.')
+              br
+              span Phone：
+              input#tel(type='text', name='tel', placeholder='Please enter your contact number or mobile phone.')
+              br
+              span Email：
+              input#email(type='text', name='email', placeholder='Please enter your email.')
+              br
+              span.areaspan Content：
+              textarea#content.area(name='content', type='textarea', placeholder='Please enter the content you want to consult', rows='6')
+            #btn.submit Send Out
+
+    //footer
+    include _footer.pug
+
+    // script
+    script(src='../js/jquery-2.1.4.min.js')
+    // script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
+    script(src='../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
+    script(src='../js/index.js')
+    script(type='text/javascript').
+      $("#btn").click(function(){
+      var name = $('#name').val();
+      var tel = $('#tel').val();
+      var email = $('#email').val();
+      var content = $('#content').val();
+      if(name==''){
+      alert('Please enter your name.');
+      return false;
+      }
+      if(tel==''){
+      alert('Please enter your contact number or mobile phone.');
+      return false;
+      }
+      if(email==''){
+      alert('Please enter your email.');
+      return false;
+      }
+      if(content==''){
+      alert('Please enter the content you want to consult');
+      return false;
+      }
+      $.ajax({
+      url: "contact_mail.php",
+      dataType: "json",
+      data: {name:name,tel:tel,email:email,content:content,t: Math.random()},
+      success: function (data) {
+      if(data==1) {//success
+      alert('We have received your inquiry and Vision will get back to you soon!');
+      location.href='about.html';
+      }else{
+      alert('Sending failed，the reason:'+data);
+      }
+      }
+      });
+      });

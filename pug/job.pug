@@ -1,0 +1,106 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
+    meta(name='description' content='Vision International C.P.A. Firm')
+    meta(name='keywords' content='Vision International C.P.A. Firm')
+    meta(name='author' content='Bohan Huang')
+    link(rel='shortcut icon' href='../img/logo.ico')
+    title Vision International C.P.A. Firm
+    link(rel='stylesheet' href='../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
+    link(rel='stylesheet' href='../css/contact.css?v=180511')
+    | <!--[if lt IE 9]>
+    |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    | <![endif]-->
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-119593980-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-119593980-1');
+
+  body
+
+    //gotop
+    #gotop
+      i.glyphicon.glyphicon-menu-up
+
+    //nav
+    .nav
+      nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+              span.sr-only menu change
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='../index.html')
+              .logo
+                h1 Vision International C.P.A. Firm
+          // 手機隱藏選單區
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            // 右選單
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='../index.html') Home
+              li
+                a(href='service.html') Service Items
+              li
+                a(href='about.html') About Vision
+              li
+                a(href='question.html') Questions
+              li
+                a.contacta(href='contact.html') Contact Us
+                  i.glyphicon.glyphicon-envelope
+              li#lang
+                a(href='../../html/job.html') 中文
+          // 手機隱藏選單區結束
+
+    //breadcrumb
+    .bread
+      .container
+        ul.breadcrumb
+          li
+            img(src='../img/icon_home.png',alt='Home')
+            a(href='../index.html') Home
+          li.active
+            a(href='contact.html') Recruitment
+
+    //header
+    header.text-center
+      img.img(src='../img/job_bg.jpg',alt='Recruitment')
+      .headertext.text-left
+
+    //main
+    main.text-center
+      .container
+        h2 Recruitment
+        .row
+          .col-sm-24
+            .welcome
+              h4 歡迎加入遠見團隊
+              br
+              span 請先投遞電子履歷表並註明應徵職位
+              br
+              span 經資格審查擇優另行通知面試
+              br
+              br
+              span Email： 
+              a(href='contact.html') 客服信箱請按此
+              br
+              span 來電請洽：(02)2758-7126轉分機826 林經理
+
+    //footer
+    include _footer.pug
+
+    //script
+    script(src='../js/jquery-2.1.4.min.js')
+    //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
+    script(src='../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
+    script(src='../js/index.js')

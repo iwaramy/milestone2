@@ -1,0 +1,281 @@
+@import _mycss.sass
+@import _template.sass
+
+//body
+body
+  overflow-x: hidden
+  background: url(../img/.jpg) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "font", Arial ,sans-serif
+p,span,li
+  font-size: 16px
+
+//breadcrumb
+.bread
+  background-color: $main
+  .breadcrumb
+    margin: 67px 0 0 0
+    background-color: $main
+    border-radius: 0
+    li
+      img
+        margin-right: 10px
+      a
+        text-decoration: none
+        color: #fff
+    li.active
+      a
+        text-decoration: none
+        color: #c9cacb
+
+//header
+header
+  margin: 0
+  padding: 0
+  .slideshow
+    position: relative
+    background-color: $main
+    img
+      display: none
+      position: absolute
+    img.show
+      display: block
+
+//main
+main
+  .tab
+    margin-bottom: 46px
+    background-color: $main
+    height: 83px
+    @media (max-width:767px)
+      margin-bottom: 30px
+      height: 70px
+    .service_btn
+      width: 32%
+      display: inline-block
+      vertical-align: top
+      cursor: pointer
+      margin-top: 12px
+      @media (max-width:767px)
+        margin-top: 12px
+      .icon
+        width: 52px
+        height: 48px
+        display: inline-block
+        vertical-align: top
+        margin: 4px 5px 0 0
+        @media (max-width:767px)
+          width: 30px
+          height: 30px
+          background-size: cover !important
+      .icon1
+        background: url('../img/service_icon_1.png') no-repeat top center
+      .icon2
+        background: url('../img/service_icon_2.png') no-repeat top center
+      .icon3
+        background: url('../img/service_icon_3.png') no-repeat top center
+      .icon4
+        background: url('../img/service_icon_4.png') no-repeat top center
+      h3
+        color: #fff
+        font-size: 18px
+        font-weight: 500
+        display: inline-block
+        @media (max-width:767px)
+          margin: 0
+          font-size: 12px
+          display: block
+    .service_btn.active
+      background-color: #fff
+      border-radius: 8px
+      padding: 0 0 30px 0
+      @media (max-width:767px)
+        padding: 0px 0px 20px 0px
+        margin-top: 12px
+      h3
+        color: $main
+      .icon1
+        background: url('../img/service_icon_1_active.png') no-repeat top center
+      .icon2
+        background: url('../img/service_icon_2_active.png') no-repeat top center
+      .icon3
+        background: url('../img/service_icon_3_active.png') no-repeat top center
+      .icon4
+        background: url('../img/service_icon_4_active.png') no-repeat top center
+
+  .about
+    margin-bottom: 120px
+    @media (max-width:767px)
+      margin-bottom: 60px
+    h2
+      color: $main
+      margin: 0 0 46px 0
+      font-size: 28px
+      font-weight: 600
+      @media (max-width:767px)
+        font-size: 24px
+        margin: 0 0 20px 0
+    img
+      padding: 10px
+    h5
+      font-size: 20px
+      padding: 30px 0 10px 32px
+    p
+      padding: 0px 10px 0 15px
+      margin: 0
+      line-height: 30px
+      color: $text_2
+    .about1
+      >div:nth-of-type(1)
+        p
+          text-indent: 2em
+  .service
+    margin-top: 60px
+    margin-bottom: 80px
+    @media (max-width:767px)
+      margin-top: 30px
+    h2
+      font-size: 28px
+      font-weight: 600
+      margin: 46px 0
+    .items
+      padding: 0 10px
+      img
+        transform: translateY(12px)
+      >div
+        padding: 0 5px
+        .border
+          height: 560px
+          border: 1px solid #ddd
+          border-radius: 10px
+          @media (max-width:767px)
+            height: auto
+            padding-bottom: 40px
+            margin-bottom: 20px
+          h3
+            margin-top: 30px
+            font-size: 20px
+            font-weight: 600
+          hr
+            margin-left: 10px
+          ul
+            padding: 0 10px 0 30px
+            height: 310px
+          li
+            font-size: 16px
+            color: $text_2
+            font-weight: 400
+            line-height: 26px
+          a
+            .more
+              display: inline-block
+              font-size: 16px
+              border: 1px solid $text_2
+              color: $text_1
+              padding: 6px 14px
+              margin-top: 18px
+              border-radius: 4px
+              text-decoration: none
+              img
+                display: inline-block
+                margin: -26px 0 0 16px
+
+  .about2
+    h2
+      margin-bottom: 46px
+      @media (max-width:767px)
+        margin-bottom: 20px
+    >.row
+      padding: 0 100px
+      margin-bottom: 60px
+      @media (max-width:767px)
+        padding: 0 40px
+      img
+        width: 314px
+        border-radius: 157px
+        @media (max-width:767px)
+          width: 70%
+      .teaminfo
+        border-left: 3px solid $main
+        padding: 20px 0 20px 50px
+        margin-top: 50px
+        @media (max-width:767px)
+          padding: 20px 0 20px 20px
+          margin-top: 0
+        hr
+          @media (max-width:767px)
+            margin: 10px 0
+        img
+          width: 28px
+          padding: 0
+        span.job
+          color: $text_3
+          padding-left: 2px
+        span.name_ch
+          color: $text_1
+          font-size: 30px
+        span.name_en
+          color: $text_1
+          font-size: 26px
+          padding-left: 20px
+        span.tel,a.mail
+          color: $main
+          padding-left: 10px
+          text-decoration: none
+          font-size: 16px
+          line-height: 28px
+          display: inline-block
+          margin-bottom: 6px
+          transition: all 0.2s ease
+          &:hover
+            color: #42b7f6
+        span.tel
+          &:hover
+            color: $main
+  .about3
+    h2
+      @media (max-width:767px)
+        margin-bottom: 30px
+    .partner
+      width: 60%
+      margin: 0 auto
+      @media (max-width:967px)
+        width: 100%
+        margin: 0 auto
+        padding: 0 15px
+      .row
+        height: 160px
+        @media (max-width:767px)
+          height: 100px
+      .line
+        display: inline-block
+        vertical-align: middle
+        width: 1px
+        background-color: #d1d1d1
+        height: 100%
+      img.company_logo
+        max-width: 268px
+        padding: 0
+        margin-right: 80px
+        @media (max-width:767px)
+          margin-right: 0
+          width: 40%
+      img.arrow
+        width: 10px
+        padding: 0
+        transform: translateX(4px)
+      .company_info
+        border-left: 1px solid #d1d1d1
+      a
+        vertical-align: middle
+        padding-left: 10px
+        text-decoration: none
+        color: $main
+        font-size: 18px
+        transition: all 0.2s ease
+        &:hover
+          color: #42b7f6
+        @media (max-width:767px)
+          font-size: 14px
+
+  .about2,.about3
+    display: none

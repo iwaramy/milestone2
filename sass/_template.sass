@@ -1,0 +1,95 @@
+//color
+$main: #008cd7
+$sub: #F58412
+$text_b: #34495E
+$text_1: #333
+$text_2: #666
+$text_3: #999
+
+//nav
+nav
+  .logo
+    margin: 8px 0
+    @media (max-width:767px)
+      margin: 8px 0 8px 8px
+  .navbar-right
+    margin-top: 8px
+  .navbar-toggle
+    margin: 16px 10px 0 0
+  li
+    margin: 0 10px
+    a
+      @media screen and (min-width: 768px) and (max-width: 991px)
+        padding: 12px !important
+  .contacta
+    background-color: $main
+    padding: 8px 14px 8px 14px !important
+    margin-top: 7px
+    font-size: 14px
+    color: #fff !important
+    cursor: pointer
+    border-radius: 4px
+    transition: all 0.2s ease
+    &:hover
+      background-color: #0072af !important
+    i
+      padding: 0 0 0 6px
+      transform: translateY(1px)
+  li.active
+    a
+      color: $main !important
+      background-color: #F8F8F8 !important
+
+//footer
+footer
+  background-color: $main
+  color: #fff
+  .list
+    display: inline-block
+    vertical-align: top
+    padding: 10px 100px 0 100px
+    @media (max-width:767px)
+      padding: 10px 20px 0 20px
+    @media screen and (min-width: 768px) and (max-width: 991px)
+      padding: 10px 40px 0 40px
+    h5
+      font-size: 16px
+      color: #bdbdbd
+      font-weight: 300
+      @media (max-width:767px)
+        font-size: 14px
+    ul
+      padding-left: 0
+      list-style: none
+      font-weight: 300
+      a
+        color: #fff !important
+        text-decoration: none !important
+  ul.information > li
+    color: #fff !important
+    text-decoration: none !important
+    a
+      color: #fff
+      text-decoration: none
+      transition: all 0.2s ease
+      &:hover
+        color: #ccc
+      @media (max-width:767px)
+        font-size: 14px
+  hr
+    margin: 10px
+  p
+    font-size: 14px
+    @media (max-width:767px)
+      font-size: 12px
+  ul
+    padding-left: 0
+    list-style: none
+    font-weight: 300
+    li
+      @media (max-width:767px)
+        font-size: 14px
+
+#mail
+  color: #fff
+  text-decoration: underline

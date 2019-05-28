@@ -1,0 +1,259 @@
+@import _mycss.sass
+@import _template.sass
+
+//body
+body
+  overflow-x: hidden
+  background: url(../img/.jpg) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "font", Arial ,sans-serif
+p,span,li
+  font-size: 16px
+
+//header
+header
+  margin-top: 67px
+#carousel-example-generic > a.right.carousel-control,#carousel-example-generic > a.left.carousel-control
+  background-image: none !important
+.carousel-inner .item h2
+  font-weight: normal
+  color: #fff
+  text-shadow: 0 0 5px rgba(0,0,0,0.5)
+  @media (max-width:767px)
+    font-size: 22px
+#slideshowtext1,
+  position: absolute
+  left: 62%
+  top: 45%
+  transform: translate(-50%,-50%)
+  @media (max-width:767px)
+    left: 50%
+    top: 30%
+    font-size: 16px
+#slideshowtext2
+  color: $text_1
+  text-shadow: 0 0 5px rgba(255,255,255,1)
+  position: absolute
+  left: 35%
+  top: 42%
+  transform: translate(-50%,-50%)
+  @media (max-width:767px)
+    top: 31%
+    font-size: 16px
+#slideshowtext3
+  position: absolute
+  left: 35%
+  top: 45%
+  transform: translate(-50%,-50%)
+  @media (max-width:767px)
+    top: 36%
+    left: 30%
+    font-size: 16px
+
+//main
+main
+  .banner
+    background-color: $main
+    height: 88px
+    color: #fff
+    @media (max-width:767px)
+      height: auto
+      margin-bottom: 30px
+    h2
+      font-size: 24px
+      margin: 0
+      line-height: 28px
+      margin-top: 14px
+      @media (max-width:767px)
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 8px
+      @media screen and (min-width: 768px) and (max-width: 991px)
+        font-size: 20px
+    a
+      text-decoration: none
+    .more
+      display: inline-block
+      font-size: 16px
+      border: 1px solid #fff
+      padding: 14px
+      margin-top: 18px
+      border-radius: 4px
+      color: #fff
+      text-decoration: none
+      transition: all 0.2s ease
+      @media (max-width:767px)
+        padding: 6px 14px
+        margin: 4px 0 10px 0
+        font-size: 16px
+        span
+          font-size: 16px
+      i
+        color: #fff
+        margin: -3px 0 0 16px
+        transition: all 0.2s ease
+        @media (max-width:767px)
+          margin: -3px 0 0 8px
+      &:hover
+        background-color: #fff
+        color: $main
+        i
+          color: $main
+          transform: translateX(10px)
+
+  .service
+    margin-bottom: 80px
+    @media (max-width:767px)
+      margin-bottom: 40px
+    h2
+      color: $main
+      font-size: 28px
+      font-weight: 600
+      margin: 46px 0
+      @media (max-width:767px)
+        font-size: 24px
+        margin: 0px 0 10px 0
+    .items
+      padding: 0 10px
+      img
+        transform: translateY(12px)
+      >div
+        padding: 0 5px
+        .border
+          height: 560px
+          border: 1px solid #ddd
+          border-radius: 10px
+          @media (max-width:767px)
+            height: auto
+          @media screen and (min-width: 768px) and (max-width: 991px)
+            height: 600px
+          h3
+            margin-top: 30px
+            font-size: 20px
+            font-weight: 600
+            @media (max-width:767px)
+              margin-top: 20px
+          hr
+            margin-left: 10px
+            @media (max-width:767px)
+              margin: 0 0 10px 0
+          ul
+            padding: 0 10px 0 30px
+            height: 380px
+            @media (max-width:767px)
+              height: auto
+              margin-bottom: 25px
+            @media screen and (min-width: 768px) and (max-width: 991px)
+              height: 400px
+          li
+            font-size: 16px
+            color: $text_2
+            font-weight: 400
+            line-height: 26px
+          a
+            text-decoration: none
+            .more
+              display: inline-block
+              font-size: 16px
+              border: 1px solid $text_2
+              color: $text_1
+              padding: 6px 14px
+              margin-top: 18px
+              border-radius: 4px
+              text-decoration: none
+              transition: all 0.2s ease
+              @media (max-width:767px)
+                margin: 0
+                margin-bottom: 20px
+              i
+                color: $text_1
+                margin: -3px 0 0 10px
+                transition: all 0.2s ease
+              &:hover
+                background-color: $text_1
+                color: #fff
+                i
+                  color: #fff
+                  transform: translateX(10px)
+
+  .about
+    padding: 100px 0
+    background: url('../img/index_about_bg.jpg') no-repeat center top
+    background-attachment: fixed
+    @media screen and (min-width: 768px) and (max-width: 991px)
+      background-attachment: inherit
+    color: #fff
+    @media (max-width:767px)
+      padding: 60px 0
+    >div>div
+      padding: 0 15px
+      font-weight: 400
+      @media (max-width:767px)
+        text-align: center
+      &:nth-child(2)
+        h2
+          font-size: 24px
+          @media (max-width:767px)
+            font-size: 22px
+        hr
+          margin: 10px 0 15px 0
+        p
+          font-size: 16px
+          line-height: 22px
+          font-weight: 300
+        a
+          .more
+            display: inline-block
+            font-size: 16px
+            border: 1px solid #fff
+            color: #fff
+            padding: 6px 14px
+            margin-top: 18px
+            border-radius: 4px
+            text-decoration: none
+            transition: all 0.2s ease
+            i
+              color: #fff
+              margin: -3px 0 0 10px
+              transition: all 0.2s ease
+            &:hover
+              background-color: #fff
+              color: $text_1
+              i
+                color: $text_1
+                transform: translateX(10px)
+      &:nth-child(1)
+        img
+          padding-top: 20px
+
+  .news
+    margin: 60px 0
+    @media (max-width:767px)
+      padding: 0 15px
+      margin: 30px 0 60px 0
+    img
+      width: 160px
+    h3
+      color: $main
+      margin: 0
+      @media (max-width:767px)
+        text-align: center
+    hr
+      margin: 15px
+    h5
+      font-size: 18px
+      margin: 0
+      @media (max-width:767px)
+        font-size: 16px
+        margin-bottom: 4px
+    p:nth-child(2)
+      color: $text_3
+      @media (max-width:767px)
+        font-size: 14px
+        margin-bottom: 4px
+    p:nth-child(3)
+      color: $text_2
+      @media (max-width:767px)
+        font-size: 14px
+        margin-bottom: 4px
+    a
+      text-decoration: none

@@ -1,0 +1,226 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    //meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no')
+    meta(name='description' content='Vision International C.P.A. Firm')
+    meta(name='keywords' content='Vision International C.P.A. Firm')
+    meta(name='author' content='Bohan Huang')
+    link(rel='shortcut icon' href='../img/logo.ico')
+    title Vision International C.P.A. Firm
+    link(rel='stylesheet' href='../plugins/bootstrap-3.3.1-24/css/bootstrap.min.css')
+    link(rel='stylesheet' href='../css/service.css?v=180511')
+    | <!--[if lt IE 9]>
+    |   <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    |   <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    | <![endif]-->
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-119593980-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-119593980-1');
+
+  body
+
+    //gotop
+    #gotop
+      i.glyphicon.glyphicon-menu-up
+
+    //nav
+    .nav
+      nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+              span.sr-only menu change
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='../index.html')
+              .logo
+                h1 VISION Vision International C.P.A. Firm
+          // 手機隱藏選單區
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            // 右選單
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='../index.html') Home
+              li.active
+                a(href='service.html') Service Items
+              li
+                a(href='about.html') About Vision
+              li
+                a(href='question.html') Questions
+              li
+                a.contacta(href='contact.html') Contact Us
+                  i.glyphicon.glyphicon-envelope
+              li#lang
+                a(href='../../html/service.html') 中文
+          // 手機隱藏選單區結束
+
+    //breadcrumb
+    .bread
+      .container
+        ul.breadcrumb
+          li
+            img(src='../img/icon_home.png',alt='Home')
+            a(href='../index.html') Home
+          li.active
+            a(href='service.html') Service Items
+
+    //header
+    header
+      .slideshow
+        img.img.show(src='../img/service_bg_01.jpg',alt='Corporation Side')
+        img.img(src='../img/service_bg_02.jpg',alt='Management Side')
+        img.img(src='../img/service_bg_03.jpg',alt='Government subsidies Application')
+        img.img(src='../img/service_bg_04.jpg',alt='Integration Services')
+
+    //main
+    main.text-center
+      .tab
+        .container
+          .service_btn.service1_btn.active
+            .icon.icon1
+            h3 Corporation Side
+          .service_btn.service2_btn
+            .icon.icon2
+            h3 Management Side
+          .service_btn.service3_btn
+            .icon.icon3
+            h3 Government Subsidy
+          .service_btn.service4_btn
+            .icon.icon4
+            h3 Integration Services
+
+      .container
+        .service
+          .service1
+            h2 Corporation Side
+            .row
+              .col-sm-12
+                img(src='../img/service_1_1.jpg',alt='Corporation Side')
+              .col-sm-12
+                img(src='../img/service_1_2.jpg',alt='Corporation Side')
+            .row.text-left
+              h5 A.	Investment and business registration
+              ul
+                li Good English communication with foreign clients.
+                li The preparing list for business registration.
+                li To provide clientsthe total solution including business model, tax planning, and the best incorporation structure.
+                li To assist with alien residence certification (ARC) application.
+                li To process labor insurance and health insurance registration.
+                li To process business relocated, capital increasing (decreasing.)
+                li To change the company’s responsibility person, directors and supervisors.
+                li To change the articles of incorporation, to shut down the company, to liquidate the company.
+                li The registration for NPO(nonprofit organization)
+                li To process outward Investment and investment to mainland China.
+                li To process overseas Chinese & Foreign Investment process and investment from mainland China.
+              h5 B.	Bookkeeping Service
+              //p 成熟的企業絕對要培養自己的財會人員，財務資訊才夠即時，在此之前將帳務委外處理，的確符合經濟效益。
+              //p 本事務所提供的帳務處理服務項目如下:
+              ul
+                li Filing VAT
+                li Filing withholding tax
+                li Filing incorporation income tax
+                li Accounting and financial analysis
+              h5 C.	Financial Audit
+              ul
+                li Vision’s professional team, not only provides financial audit service, but also provides the audit for special project.
+                //li 公司之資本額若超過新台幣 3,000 萬元，依法財務報表需經會計師簽證。
+                //li 公司若向金融機構融資超過一定金額，需提供經會計師簽證的財務報表予申請之金融機構。
+                //li 企業併購，被併購公司提示經會計師簽證的財務報表為必要程序或特殊目的查核服務。
+              h5 D.	Tax Audit
+              p Our team can minimize clients’ tax risk to meet the tax planning.
+              //ul
+                li 可由會計師事先查核、提示稅法上之規範或逕行輔導。
+                li 協助公司申報排除不必要的稅務風險。
+              h5 E.	The plan for initial public offering (IPO)
+              ul
+                li A client to discuss with professional team before IPO is necessary.  Vision belongs to that sort of teams.
+                //li 公開發行及上市(櫃) 輔導規劃。
+                //li 租稅規劃 / 資本規劃 / 股權規劃 / 營業規劃 / 關係企業整合 / 經營權維護規劃 / 公開發行相關事項之諮詢輔導。
+          .service2
+            h2 Management Side
+            .row
+              .col-sm-12
+                img(src='../img/service_1_3.jpg',alt='Management Side')
+              .col-sm-12
+                img(src='../img/service_1_4.jpg',alt='Management Side')
+            .row.text-left
+              h5 A.	Considering a client’s business model, tax planning, and client’s proper situation, Vision will provide the best incorporation structure to our clients.
+              //p 任何組織架構之調整絕對是以運作上可行為優先考量，其次再搭配稅務規劃。
+              h5 B.	Risk Control Advice
+              p To review business contracts, to witness business documents, and to alarm the main risk to CEO.
+              h5 C.	Incorporation Structure Planning
+              p Considering the control ability, internal management, company law, Vision will provide the best structure for our clients.
+              h5 D.	To Coordinate the disagreement among shareholders
+              ul
+                li Vision will be the best communicated bridge among shareholders.
+                //li 多數股東亦有不被少數流氓股東干擾的權利。
+              h5 E.	To prepare business planning for clients to raise capital
+              ul
+                li Vision will provide the best strategy help client looking for the proper potential partners.
+                //li 協助企業掌握核心價值、擬定策略方針並逕行尋找合適的投資者，配合運籌策略及全球佈局與上下游整合與集團部門切割等顧問諮詢。
+              h5 F.	Tax Services
+              //p 保障納稅義務人應有之權利，避免因疏忽而造成無法挽救的傷害。本事務所稅務服務項目如下：
+              ul
+                li To help corporation clients file VAT and annual incorporation income tax.
+                li To help file citizen (alien) individual income tax.
+                li To help tax return and tax planning.
+                li Tax Administrative Remedy.
+                //li 租稅獎勵申請。
+                //li 稅務行政救濟服務。
+              h5 G.	Investment assessment and financial inspection
+              p To evaluate the potential invested target and provide advices to investors.
+              h5 I.	To rescue the crisis enterprise and provide advices.
+              p For a business entity, to survive is rule no.1 and rule no.2 is not against rule no.1.
+              h5 J.	Intangible assets assessment
+              p Goodwill, Franchise, Skill, Trademark, and so on…
+              h5 K.	Real estate development consultation
+              h5 L.	To handle with commercial disputes and negotiate with clients’ opponents
+              //h5 (十二) 商業糾紛之協助處理與商務談判
+              //p 企業組織每日面對無數的交易，難免遇到交易糾紛或不合理之情事，訴訟是非常的手段，但非最終的目的，若兩造能透過第三者，理性地圓滿處理則皆大歡喜。
+          .service3
+            h2 Government Subsidy
+            .row
+              .col-sm-12
+                img(src='../img/service_1_5.jpg',alt='Government Subsidy')
+              .col-sm-12
+                img(src='../img/service_1_6.jpg',alt='Government Subsidy')
+            .row.text-left
+              h5 A.	Small Business Innovation & Research
+              p To encourage and assist domestic SMEs to engage in active technology research and innovation or product development, Since 1999 the Small Business Innovation Research (SBIR) program has been launched in accordance with the Subsidy and Assistance Regulations for Promoting Industry Innovation by MOEA. Through grants and subsidies provided by SBIR, the risks and costs borne by SMEs engaging in innovation and R&D activities will be reduced. The program encourages SMEs to carry out active innovation and helps expand private-sector investment in R&D so that the results and achievements will help the country further its economic development.
+              //ul
+                li 「創新應用」以未曾獲本計畫補助之申請者所提計畫之技術應用，具有創新性或能提高本身技術水準，達到技術升級，並有顯著效益者。
+                li 「創新研發」之申請者所提計畫之技術或產品指標，應具有創新性或能提高國內產業技術水準。
+              //p 2. 「創新服務」：係指有助於產業發展之具示範性之知識創造、流通及加值等核心知識服務平台、系統、模式等建立。
+              h5 B.	Technology Development Programs
+              p Against the backdrop of a changing industrial structure, MOEA actively works alongside the government to implement its industrial innovation policies. Through the promotion of close collaboration among the private sectors, the academic sectors, and think tanks, the Technology Development Programs have developed an innovative business mode that is both service- and technology-driven, which integrates the expertise of multiple disciplines to help improve Taiwan’s industrial structure and secure a stronger position in the international market.
+              //h5 (三) 前置作業
+              //p  「創新」為申請上該兩項補助之基本元素，然而企業仍須符合客觀之基本財務要件，諸如財務健全性、財務評比、自籌款之適足性、簽約後之管理與考核等，本事務所提供計畫案申請前的財務輔導與簽約後管理與考核的核銷程序諮詢。
+          .service4
+            h2 Integration Services
+            .row
+              .col-sm-12
+                img(src='../img/service_1_7.jpg',alt='Integration Services')
+              .col-sm-12
+                img(src='../img/service_1_8.jpg',alt='Integration Services')
+            .row.text-left
+              h5 A.	To help clients re-locate their core value, make product differentiation, be branding.
+              //p 本事務所與威登財務顧問有限公司、燊樺資產鑑訂股份有限公司諸多專家與先進合作，協助企業確定核心價值及產業升級。
+              h5 B.	To help clients make digital transformation.
+              //p 電子商務時代的來臨，廠商亦應隨著時代的改變而有所調整，中國大陸的崛起，台灣的中、小企業更應順著這股驚人的內需力道，順勢而起；重新發現企業自身的核心價值，順利與世界市場接軌。
+
+    //footer
+    include _footer.pug
+
+    //script
+    script(src='../js/jquery-2.1.4.min.js')
+    //script(src='https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js')
+    script(src='../plugins/bootstrap-3.3.1-24/js/bootstrap.min.js')
+    script(src='../js/index.js')

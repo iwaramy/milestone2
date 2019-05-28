@@ -1,0 +1,154 @@
+@import _mycss.sass
+@import _template.sass
+
+//body
+body
+  overflow-x: hidden
+  background: url(../img/.jpg) no-repeat top center
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "font", Arial ,sans-serif
+p,span,li
+  font-size: 16px
+
+//breadcrumb
+.bread
+  background-color: $main
+  .breadcrumb
+    margin: 67px 0 0 0
+    background-color: $main
+    border-radius: 0
+    li
+      img
+        margin-right: 10px
+      a
+        text-decoration: none
+        color: #fff
+    li.active
+      a
+        text-decoration: none
+        color: #c9cacb
+
+//header
+header
+  margin: 0
+  padding: 0
+  .slideshow
+    position: relative
+    background-color: $main
+    img
+      display: none
+      position: absolute
+    img.show
+      display: block
+
+//main
+main
+  .tab
+    background-color: $main
+    height: 83px
+    @media (max-width:767px)
+      margin-bottom: 30px
+      height: 70px
+    .service_btn
+      width: 24%
+      display: inline-block
+      vertical-align: top
+      cursor: pointer
+      margin-top: 12px
+      @media (max-width:767px)
+        margin-top: 12px
+      .icon
+        width: 52px
+        height: 48px
+        display: inline-block
+        vertical-align: top
+        margin: 4px 5px 0 0
+        @media (max-width:767px)
+          width: 26px
+          height: 26px
+          background-size: cover !important
+        @media screen and (min-width: 768px) and (max-width: 991px)
+          width: 40px
+          height: 40px
+          background-size: cover !important
+      .icon1
+        background: url('../img/service_icon_1.png') no-repeat top center
+      .icon2
+        background: url('../img/service_icon_2.png') no-repeat top center
+      .icon3
+        background: url('../img/service_icon_3.png') no-repeat top center
+      .icon4
+        background: url('../img/service_icon_4.png') no-repeat top center
+      h3
+        color: #fff
+        font-size: 18px
+        font-weight: 500
+        display: inline-block
+        @media (max-width:767px)
+          margin: 0
+          font-size: 12px
+          line-height: 12px
+          display: block
+        @media screen and (min-width: 768px) and (max-width: 991px)
+          margin: 0
+          font-size: 14px
+          line-height: 14px
+          display: block
+    .service_btn.active
+      background-color: #fff
+      border-radius: 8px
+      padding: 0 0 30px 0
+      @media (max-width:767px)
+        padding: 0px 0px 20px 0px
+        margin-top: 12px
+      h3
+        color: $main
+      .icon1
+        background: url('../img/service_icon_1_active.png') no-repeat top center
+      .icon2
+        background: url('../img/service_icon_2_active.png') no-repeat top center
+      .icon3
+        background: url('../img/service_icon_3_active.png') no-repeat top center
+      .icon4
+        background: url('../img/service_icon_4_active.png') no-repeat top center
+
+  .service
+    margin-bottom: 120px
+    @media (max-width:767px)
+      margin-bottom: 60px
+      padding: 0 15px
+    h2
+      color: $main
+      margin: 46px 0
+      font-size: 28px
+      font-weight: 600
+      @media (max-width:767px)
+        margin: 0 0 30px 0
+        font-size: 24px
+    img
+      padding: 10px
+      @media (max-width:767px)
+        padding: 0 0 10px 0
+    h5
+      font-size: 20px
+      padding: 30px 0 10px 32px
+      @media (max-width:767px)
+        padding: 30px 0 10px 0
+        line-height: 28px
+    p,ul
+      padding: 0px 40px 0 70px
+      margin: 0
+      line-height: 30px
+      color: $text_2
+      @media (max-width:767px)
+        padding: 0 0 0 14px
+    ul
+      padding-left: 94px
+      @media (max-width:767px)
+        padding-left: 36px
+    .service3
+      ul
+        padding-left: 122px
+        @media (max-width:767px)
+          padding-left: 36px
+    .service2,.service3,.service4
+      display: none
