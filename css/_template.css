@@ -1,0 +1,92 @@
+nav .logo {
+  margin: 8px 0; }
+  @media (max-width: 767px) {
+    nav .logo {
+      margin: 8px 0 8px 8px; } }
+
+nav .navbar-right {
+  margin-top: 8px; }
+
+nav .navbar-toggle {
+  margin: 16px 10px 0 0; }
+
+nav li {
+  margin: 0 10px; }
+
+nav .contacta {
+  background-color: #008cd7;
+  padding: 8px 14px 8px 14px !important;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #fff !important;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  nav .contacta:hover {
+    background-color: #0072af !important; }
+  nav .contacta i {
+    padding: 0 0 0 6px;
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px); }
+
+nav li.active a {
+  color: #008cd7 !important;
+  background-color: #F8F8F8 !important; }
+
+footer {
+  background-color: #008cd7;
+  color: #fff; }
+  footer .list {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 100px 0 100px; }
+    @media (max-width: 767px) {
+      footer .list {
+        padding: 10px 20px 0 20px; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      footer .list {
+        padding: 10px 40px 0 40px; } }
+    footer .list h5 {
+      font-size: 16px;
+      color: #bdbdbd;
+      font-weight: 300; }
+      @media (max-width: 767px) {
+        footer .list h5 {
+          font-size: 14px; } }
+    footer .list ul {
+      padding-left: 0;
+      list-style: none;
+      font-weight: 300; }
+      footer .list ul a {
+        color: #fff !important;
+        text-decoration: none !important; }
+  footer ul.information > li {
+    color: #fff !important;
+    text-decoration: none !important; }
+    footer ul.information > li a {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      footer ul.information > li a:hover {
+        color: #ccc; }
+      @media (max-width: 767px) {
+        footer ul.information > li a {
+          font-size: 14px; } }
+  footer hr {
+    margin: 10px; }
+  footer ul {
+    padding-left: 0;
+    list-style: none;
+    font-weight: 300; }
+    @media (max-width: 767px) {
+      footer ul li {
+        font-size: 14px; } }
+
+#mail {
+  color: #fff;
+  text-decoration: underline; }

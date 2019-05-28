@@ -1,0 +1,414 @@
+@charset "UTF-8";
+#gotop {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 16px 20px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  z-index: 500;
+  border-radius: 50px; }
+  #gotop:hover {
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden; }
+
+.logo {
+  width: 150px;
+  height: 50px;
+  background: url("../img/logo.png?v=80411") no-repeat;
+  background-size: contain;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
+  .logo a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; }
+
+.img {
+  width: 100%; }
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.rowsh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .rowsh [class*="col-"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.mb {
+  margin-bottom: 5px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.mb50 {
+  margin-bottom: 50px; }
+
+.mb100 {
+  margin-bottom: 100px; }
+
+.mt5 {
+  margin-top: 5px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt50 {
+  margin-top: 50px; }
+
+.mt100 {
+  margin-top: 100px; }
+
+.m5 {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.m10 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.m15 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.m30 {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.m50 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.m100 {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+nav .logo {
+  margin: 8px 0; }
+  @media (max-width: 767px) {
+    nav .logo {
+      margin: 8px 0 8px 8px; } }
+
+nav .navbar-right {
+  margin-top: 8px; }
+
+nav .navbar-toggle {
+  margin: 16px 10px 0 0; }
+
+nav li {
+  margin: 0 10px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    nav li a {
+      padding: 12px !important; } }
+
+nav .contacta {
+  background-color: #008cd7;
+  padding: 8px 14px 8px 14px !important;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #fff !important;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  nav .contacta:hover {
+    background-color: #0072af !important; }
+  nav .contacta i {
+    padding: 0 0 0 6px;
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px); }
+
+nav li.active a {
+  color: #008cd7 !important;
+  background-color: #F8F8F8 !important; }
+
+footer {
+  background-color: #008cd7;
+  color: #fff; }
+  footer .list {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 100px 0 100px; }
+    @media (max-width: 767px) {
+      footer .list {
+        padding: 10px 20px 0 20px; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      footer .list {
+        padding: 10px 40px 0 40px; } }
+    footer .list h5 {
+      font-size: 16px;
+      color: #bdbdbd;
+      font-weight: 300; }
+      @media (max-width: 767px) {
+        footer .list h5 {
+          font-size: 14px; } }
+    footer .list ul {
+      padding-left: 0;
+      list-style: none;
+      font-weight: 300; }
+      footer .list ul a {
+        color: #fff !important;
+        text-decoration: none !important; }
+  footer ul.information > li {
+    color: #fff !important;
+    text-decoration: none !important; }
+    footer ul.information > li a {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      footer ul.information > li a:hover {
+        color: #ccc; }
+      @media (max-width: 767px) {
+        footer ul.information > li a {
+          font-size: 14px; } }
+  footer hr {
+    margin: 10px; }
+  footer p {
+    font-size: 14px; }
+    @media (max-width: 767px) {
+      footer p {
+        font-size: 12px; } }
+  footer ul {
+    padding-left: 0;
+    list-style: none;
+    font-weight: 300; }
+    @media (max-width: 767px) {
+      footer ul li {
+        font-size: 14px; } }
+
+#mail {
+  color: #fff;
+  text-decoration: underline; }
+
+body {
+  overflow-x: hidden;
+  background: url(../img/.jpg) no-repeat top center;
+  font-family: "Helvetica Neue", Helvetica, "PingFang TC", "LiHei Pro", "Hiragino Sans GB", "Microsoft JhengHei", "微軟正黑體", Arial ,sans-serif; }
+
+p, span, li {
+  font-size: 16px; }
+
+.bread {
+  background-color: #008cd7; }
+  .bread .breadcrumb {
+    margin: 67px 0 0 0;
+    background-color: #008cd7;
+    border-radius: 0; }
+    .bread .breadcrumb li img {
+      margin-right: 10px; }
+    .bread .breadcrumb li a {
+      text-decoration: none;
+      color: #fff; }
+    .bread .breadcrumb li.active a {
+      text-decoration: none;
+      color: #c9cacb; }
+
+header {
+  margin: 0;
+  padding: 0; }
+  header .slideshow {
+    position: relative;
+    background-color: #008cd7; }
+    header .slideshow img {
+      display: none;
+      position: absolute; }
+    header .slideshow img.show {
+      display: block; }
+
+main .tab {
+  background-color: #008cd7;
+  height: 83px; }
+  @media (max-width: 767px) {
+    main .tab {
+      margin-bottom: 30px;
+      height: 70px; } }
+  main .tab .service_btn {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-top: 12px; }
+    @media (max-width: 767px) {
+      main .tab .service_btn {
+        margin-top: 12px; } }
+    main .tab .service_btn .icon {
+      width: 52px;
+      height: 48px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 4px 5px 0 0; }
+      @media (max-width: 767px) {
+        main .tab .service_btn .icon {
+          width: 26px;
+          height: 26px;
+          background-size: cover !important; } }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        main .tab .service_btn .icon {
+          width: 40px;
+          height: 40px;
+          background-size: cover !important; } }
+    main .tab .service_btn .icon1 {
+      background: url("../img/service_icon_1.png") no-repeat top center; }
+    main .tab .service_btn .icon2 {
+      background: url("../img/service_icon_2.png") no-repeat top center; }
+    main .tab .service_btn .icon3 {
+      background: url("../img/service_icon_3.png") no-repeat top center; }
+    main .tab .service_btn .icon4 {
+      background: url("../img/service_icon_4.png") no-repeat top center; }
+    main .tab .service_btn h3 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      display: inline-block; }
+      @media (max-width: 767px) {
+        main .tab .service_btn h3 {
+          margin: 0;
+          font-size: 12px;
+          line-height: 12px;
+          display: block; } }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        main .tab .service_btn h3 {
+          margin: 0;
+          font-size: 14px;
+          line-height: 14px;
+          display: block; } }
+  main .tab .service_btn.active {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0 0 30px 0; }
+    @media (max-width: 767px) {
+      main .tab .service_btn.active {
+        padding: 0px 0px 20px 0px;
+        margin-top: 12px; } }
+    main .tab .service_btn.active h3 {
+      color: #008cd7; }
+    main .tab .service_btn.active .icon1 {
+      background: url("../img/service_icon_1_active.png") no-repeat top center; }
+    main .tab .service_btn.active .icon2 {
+      background: url("../img/service_icon_2_active.png") no-repeat top center; }
+    main .tab .service_btn.active .icon3 {
+      background: url("../img/service_icon_3_active.png") no-repeat top center; }
+    main .tab .service_btn.active .icon4 {
+      background: url("../img/service_icon_4_active.png") no-repeat top center; }
+
+main .service {
+  margin-bottom: 120px; }
+  @media (max-width: 767px) {
+    main .service {
+      margin-bottom: 60px;
+      padding: 0 15px; } }
+  main .service h2 {
+    color: #008cd7;
+    margin: 46px 0;
+    font-size: 28px;
+    font-weight: 600; }
+    @media (max-width: 767px) {
+      main .service h2 {
+        margin: 0 0 30px 0;
+        font-size: 24px; } }
+  main .service img {
+    padding: 10px; }
+    @media (max-width: 767px) {
+      main .service img {
+        padding: 0 0 10px 0; } }
+  main .service h5 {
+    font-size: 20px;
+    padding: 30px 0 10px 32px; }
+    @media (max-width: 767px) {
+      main .service h5 {
+        padding: 30px 0 10px 0;
+        line-height: 28px; } }
+  main .service p, main .service ul {
+    padding: 0px 40px 0 70px;
+    margin: 0;
+    line-height: 30px;
+    color: #666; }
+    @media (max-width: 767px) {
+      main .service p, main .service ul {
+        padding: 0 0 0 14px; } }
+  main .service ul {
+    padding-left: 94px; }
+    @media (max-width: 767px) {
+      main .service ul {
+        padding-left: 36px; } }
+  main .service .service3 ul {
+    padding-left: 122px; }
+    @media (max-width: 767px) {
+      main .service .service3 ul {
+        padding-left: 36px; } }
+  main .service .service2, main .service .service3, main .service .service4 {
+    display: none; }
